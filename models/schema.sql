@@ -11,7 +11,7 @@ CREATE TABLE products (
     product_description VARCHAR(1000) NULL,
     product_image VARCHAR (21) NULL,
     price DECIMAL (6,2),
-    quanity INT(10),
+    quantity INT(10),
     PRIMARY KEY (id)
 );
 
