@@ -2,14 +2,21 @@ var db = require("../models");
 
 module.exports = function(app) {
   // Load index page
-  app.get("/", function(req, res) {
+  app.get("/home", function(req, res) {
     db.Products.findAll({}).then(function(dbExamples) {
-      res.render("index", {
+      res.render("home", {
         msg: "Welcome!",
         examples: dbExamples
       });
     });
   });
+
+  // app.get("/home", function(req, res) {
+  //   res.render("home", {
+  //     msg: "Welcome!",
+  //     examples: dbExamples
+  //   });
+  // });
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
