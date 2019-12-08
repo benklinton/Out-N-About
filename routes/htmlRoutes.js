@@ -11,8 +11,14 @@ module.exports = function(app) {
     });
   });
 
+
   app.get("/listing", function(req, res) {
-    res.render("listing");
+    db.Products.findAll({}).then(function(data) {
+      // res.json(data);
+      // console.log('data: ', data[0].dataValues)
+      res.render("listing", { products: data });
+    });
+   
   });
 
   app.get("/contact", function(req, res) {
