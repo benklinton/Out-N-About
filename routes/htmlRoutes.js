@@ -20,7 +20,9 @@ module.exports = function(app) {
     });
    
   });
-
+  app.get("/", function(req, res) {
+    res.render("home");
+  });
   app.get("/contact", function(req, res) {
     res.render("contact");
   });
@@ -28,14 +30,6 @@ module.exports = function(app) {
   app.get("/post", function(req, res) {
     res.render("post");
   });
-
-  // app.get("/listing", function(req, res) {
-  //      res.render("listing", {
-  //      msg: "Welcome!",
-  //      examples: dbExamples
-  //   });
-  // });
-
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
