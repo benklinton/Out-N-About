@@ -14,13 +14,22 @@
                 <!--   CARD 1   -->
                 {{#each products}}
                 <div class="col s12 m4">
-                    {{log this}}
+                    {{!-- {{log this}} --}}
                     <div class="icon-block">
-                        <img class="responsive-img" src="assets/accesories.png" alt="Unsplashed">
-                        <h2 class="center brown-text"><i class="material-icons">Accesories</i></h2>
-                        <h5 class="center">{{this.dataValues.product_name}}</h5>
+                        {{!-- <img class="responsive-img" src="assets/accesories.png" alt="Unsplashed"> --}}
+                        <h1 class="center">{{this.dataValue.product_name}}</h1>
+                        <h3 class="center brown-text"><i class="material-icons">{{this.dataValue.product_category}}</i></h3>
+                        <div>
+                            <h3 class="center">Product Description:</h3>
+                            <h2 class="center light">{{this.dataValue.product_description}}</h2>
+                        </div>
+                        <h4>Asking Price: {{this.dataValue.price}}</h4>
+                        <div class="contactInfo">
+                            <h3 class="center">Seller Contact Information</h3>
+                            <p>{{this.dataValue.seller_name}}</p>
+                            <p>{{this.dataValue.seller_number}}</p>
+                        </div>
 
-                        <p class="light">{{this.dataValues.product_description}}</p>
                         <hr>
                             <a id="buyButton" dataValue={{this.dataValues.id}} class="waves-effect waves-light btn-small">BUY</a>
                     </div>

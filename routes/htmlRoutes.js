@@ -17,14 +17,22 @@ module.exports = function(app) {
       // res.json(data);
       // console.log('data: ', data[0].dataValues)
       res.render("listing", { products: data });
+      });
     });
-   
-  });
+  // app.get("/listing", function(req, res) {
+  //   res.render("listing");
+  // });
+
+ 
   app.get("/", function(req, res) {
     res.render("home");
   });
   app.get("/contact", function(req, res) {
     res.render("contact");
+  });
+
+  app.get("/buy", function(req, res) {
+    res.render("buy");
   });
 
   app.get("/post", function(req, res) {

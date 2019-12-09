@@ -1,23 +1,3 @@
-{{!-- <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <!-- My Style-->
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap" rel="stylesheet">
-    <title>Contact Us</title>
-</head> --}}
-
-<!-- Navbar-->
 
 
 <br><br>
@@ -25,8 +5,8 @@
 
 
   <div class="row">
-    <div class="container-post">
-      <div class="proform center-align">
+    <div class="container">
+      <div class="proform valign-wrapper">
 
         <form action="#" id="post-form" class="center-align">
           <h3>Product Info</h3>
@@ -54,10 +34,16 @@
                    <label for="price">Price</label>
                 </div>
              </div>
-    <div class="row">
+             <div class="row">
                 <div class="input-field col s6">
-                   <input id="quantity" type="text" data-length="10">
-                   <label for="quantity">Quantity</label>
+                   <input id="seller_name" type="text" data-length="10">
+                   <label for="seller_name">Seller Name</label>
+                </div>
+             </div>
+             <div class="row">
+                <div class="input-field col s6">
+                   <input id="seller_number" type="text" data-length="10">
+                   <label for="seller_number">Phone Number</label>
                 </div>
              </div>
           <br>
@@ -70,12 +56,13 @@
   </div>
   <div id="afterPost">
     <h1 class="center-align">Thank you for listing your item with <a href="home" class="brand-logo" style="font-family: 'Permanent Marker', cursive;">Out <img
-                    src="assets/mountain.png" style="width: 40px; height: 35px;">' Bout</a></h1>
+                    src="assets/mountain.png" style="width: 40px; height: 35px;">' Bout</a>
+                    <a href="listing"><p>view our listings!</p></a></h1>
   </div>
 
   <br><br>
   <div class="container">
-    <div class="row">
+    <div class="row" id="bottomCards">
       <!--   CARD 1   -->
       <div class="col s12 m4">
         <div class="icon-block">

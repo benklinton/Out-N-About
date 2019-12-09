@@ -11,10 +11,14 @@ $("#submit").click(function (event) {
     var product_catagory = $("#product_catagory").val().trim();
     var product_description = $("#product_description").val().trim();
     var price = $("#price").val().trim();
-    var quantity = $("#quantity").val().trim();
-    
+    // var quantity = $("#quantity").val().trim();
+    var seller_name = $("#seller_name").val().trim();
+    var seller_number = $("#seller_number").val().trim();
+    console.log('seller_name: ', seller_name)
+
     $('#post-form').empty();
     $('.proform').hide();
+    $('#bottomCards').hide()
     $('#afterPost').show();
 
     
@@ -24,7 +28,8 @@ $("#submit").click(function (event) {
             product_catagory,
             product_description,
             price: price,
-            quantity
+            seller_name,
+            seller_number
         },
         function () {
             console.log("Success!")

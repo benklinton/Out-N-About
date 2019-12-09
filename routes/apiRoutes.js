@@ -16,14 +16,15 @@ module.exports = function(app) {
       product_description: req.body.product_description,
       product_image_link: req.body.product_image_link,
       price: req.body.price,
-      quanity: req.body.quanity
+      seller_name: req.body.seller_name,
+      seller_number: req.body.seller_number
     }).then(function(data) {
       res.json(data);
     });
   });
 
   // Delete an example by id
-  app.delete("/api/products/:id", function(req, res) {
+  app.delete("/api/Products/:id", function(req, res) {
     db.Products.destroy({ where: { id: req.params.id } }).then(function(data) {
       res.json(data);
       console.log(res.json(data));
