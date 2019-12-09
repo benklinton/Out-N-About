@@ -15,8 +15,8 @@ module.exports = function(app) {
   app.get("/listing", function(req, res) {
     db.Products.findAll({}).then(function(data) {
       // res.json(data);
-      // console.log('data: ', data[0].dataValues)
-      res.render("listing", { products: data });
+      //console.log('data: ', data[0].dataValues)
+      res.render("listing", { Products: data });
       });
     });
   // app.get("/listing", function(req, res) {

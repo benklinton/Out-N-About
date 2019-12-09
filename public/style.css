@@ -1,28 +1,27 @@
 #header {
-    background-color:white;
+    background-color: white;
     height: 65px;
     width: 960px;
     margin: 21px;
     border: 21px;
     padding: 21px;
-
 }
 
 #namebox {
-        background-color: #4aaaa5;
-        position: relative;
-        font-size: large;
-        height: 45px;
-        width: 220.5px;
-        margin: 40.5px;
-        margin-left: initial;
+    background-color: #4aaaa5;
+    position: relative;
+    font-size: large;
+    height: 45px;
+    width: 220.5px;
+    margin: 40.5px;
+    margin-left: initial;
 }
+
 #head {
     color: white;
     position: relative;
     margin: 21px;
     border: 21px;
-
 }
 
 #main {
@@ -33,7 +32,6 @@
     margin: 35px;
     border: 21px;
     padding: 21px;
-
 }
 
 #about {
@@ -45,6 +43,7 @@
     font-size: xx-large;
     padding-left: inherit;
 }
+
 .logo {
     padding: 10px;
 }
@@ -57,7 +56,9 @@
     color: black;
 }
 
+
 /** image **/
+
 
 /* Container holding the image and the text */
 
@@ -67,6 +68,7 @@
     color: white;
 }
 
+
 /* Bottom left text */
 
 .bottom-left {
@@ -74,6 +76,7 @@
     bottom: 8px;
     left: 16px;
 }
+
 
 /* Top left text */
 
@@ -83,6 +86,7 @@
     left: 16px;
 }
 
+
 /* Top right text */
 
 .top-right {
@@ -91,6 +95,7 @@
     right: 16px;
 }
 
+
 /* Bottom right text */
 
 .bottom-right {
@@ -98,6 +103,7 @@
     bottom: 8px;
     right: 16px;
 }
+
 
 /* Centered text */
 
@@ -136,8 +142,7 @@
 }
 
 .proform {
-    background-color: #e3f2fd ;
-    
+    background-color: #e3f2fd;
     padding: 20px;
     width: 580px;
     color: black;
@@ -156,7 +161,6 @@
 .nav-wrapper {
     position: fixed;
     color: #69f0ae !important;
-    
 }
 
 .logo {
@@ -172,4 +176,8 @@
 
 .ourpro {
     font-family: Permanent Marker, cursive;
+}
+
+.description {
+    border: black;
 }

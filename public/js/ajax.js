@@ -1,10 +1,42 @@
 /* eslint-disable prettier/prettier */
 
-$(document).ready(function(){
+$(document).ready(function() {
     $('#afterPost').hide();
+    $('#confirmPage').hide();
+    $('.afterPost').hide();
 })
 
-$("#submit").click(function (event) {
+$('#buyButton').click(function(event) {
+    $('#listings').hide();
+    $('#confirmPage').show();
+})
+
+$('#deleteButton').click(function() {
+    // console.log("event: " + JSON.stringify($(this)));
+    // $.delete("/api/Products/:id",
+    // { id: $('value') }
+    // )
+    $('#confirmPage').hide();
+    $('#afterPurchase').show();
+})
+
+$(".delete-listing").on("click", function(event) {
+    var id = $(this).data("id");
+    console.log("id: " + id);
+    // Send the DELETE request.
+    $.ajax("/api/Products/" + id, {
+        type: "DELETE"
+    }).then(
+        function() {
+            console.log("deleted cat", id);
+            // Reload the page to get the updated list
+            location.reload();
+
+        }
+    );
+});
+
+$("#submit").click(function(event) {
     event.preventDefault();
 
     var product_name = $("#product_name").val().trim();
@@ -21,9 +53,8 @@ $("#submit").click(function (event) {
     $('#bottomCards').hide()
     $('#afterPost').show();
 
-    
-    $.post("/api/sell",
-        {
+
+    $.post("/api/sell", {
             product_name,
             product_catagory,
             product_description,
@@ -31,7 +62,7 @@ $("#submit").click(function (event) {
             seller_name,
             seller_number
         },
-        function () {
+        function() {
             console.log("Success!")
         });
 });
