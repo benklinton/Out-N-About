@@ -2,22 +2,22 @@
 
 $(document).ready(function() {
     $('#afterPost').hide();
-    $('#confirmPage').hide();
-    $('.afterPost').hide();
+    $('.confirmPage').hide();
+    $('.afterPurchase').hide();
 })
 
 $('#buyButton').click(function(event) {
-    $('#listings').hide();
-    $('#confirmPage').show();
+    $('.listings').hide();
+    $('.confirmPage').show();
 })
 
-$('#deleteButton').click(function() {
+$('.deleteButton').click(function() {
     // console.log("event: " + JSON.stringify($(this)));
     // $.delete("/api/Products/:id",
     // { id: $('value') }
     // )
-    $('#confirmPage').hide();
-    $('#afterPurchase').show();
+    $('.confirmPage').hide();
+    $('.afterPurchase').show();
 })
 
 $(".delete-listing").on("click", function(event) {

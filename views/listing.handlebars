@@ -13,12 +13,13 @@
             <div class="row">
                 <!--   CARD 1   -->
                 {{#each Products}}
-                <div id="listings" class="col s12 m4">
+                <div id="listings" class="col s12 m4 listings">
                     {{!-- {{log this}} --}}
                     <div class="icon-block">
                         {{!-- <img class="responsive-img" src="assets/accesories.png" alt="Unsplashed"> --}}
                         <h2 class="center"> {{this.dataValues.product_name}}</h2>
-                        <h3 class="center brown-text"><i class="material-icons">{{this.dataValues.product_category}}</i></h3>
+                        <h3>Category</h3>
+                        <h2 class="center brown-text"><i class="material-icons">{{this.dataValues.product_category}}</i></h2>
                         <div class="description">
                             <h3 class="center">Product Description:</h3>
                             <h2 class="center light">{{this.dataValues.product_description}}</h2>
@@ -35,7 +36,7 @@
                     </div>
                 
             </div>
-                <div id="confirmPage" class="col s12 m4">
+                <div id="confirmPage" class="col s12 m4 confirmPage">
                     {{!-- {{log this}} --}}
                     <div class="icon-block proform" style="max-width: 200px;">
                          <div >
@@ -54,7 +55,7 @@
                     
             </div>
  
-        <div id="afterPost">
+        <div class="afterPurchase">
     <h1 class="center-align">Thank you for using <a href="home" class="brand-logo" style="font-family: 'Permanent Marker', cursive;">Out <img
                     src="assets/mountain.png" style="width: 40px; height: 35px;">' Bout</a>
                     <a href="listing"><p>view our listings!</p></a></h1>
