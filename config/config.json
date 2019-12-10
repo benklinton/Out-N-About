@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "Cervelo05",
+    "password": "PKuoq95F",
     "database": "OutNAboutdb",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "Cervelo05",
+    "password": "PKuoq95F",
 
     "database": "testdb",
     "host": "localhost",
