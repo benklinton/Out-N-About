@@ -1,0 +1,65 @@
+
+<body>
+
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="ourpro">
+            <h5 style="color: black;">Our Products</h5>
+        </div>
+        <div class="section">
+
+            <!--   Card Section  1 -->
+            <div class="row">
+                <!--   CARD 1   -->
+                {{#each Products}}
+                <div id="listings" class="col s12 m4 listings">
+                    {{!-- {{log this}} --}}
+                    <div class="icon-block">
+                        {{!-- <img class="responsive-img" src="assets/accesories.png" alt="Unsplashed"> --}}
+                        <h2 class="center"> {{this.dataValues.product_name}}</h2>
+                        <h3>Category</h3>
+                        <h2 class="center brown-text"><i class="material-icons"></i>{{this.dataValues.product_category}}</i></h2>
+                        <div class="description">
+                            <h3 class="center">Product Description:</h3>
+                            <h2 class="center light">{{this.dataValues.product_description}}</h2>
+                        </div>
+                        <h4>Asking Price: ${{this.dataValues.price}}</h4>
+                        <div class="contactInfo">
+                            <h5 class="center">Seller Contact Information</h5>
+                            <p>{{this.dataValues.seller_name}}</p>
+                            <p>{{this.dataValues.seller_number}}</p>
+                        </div>
+
+                        <hr>
+                            <a id="buyButton" dataValue={{this.dataValues.id}} class="waves-effect waves-light btn-small">BUY</a>
+                    </div>
+                
+            </div>
+                <div id="confirmPage" class="col s12 m4 confirmPage">
+                    {{!-- {{log this}} --}}
+                    <div class="icon-block proform" style="max-width: 200px;">
+                         <div >
+                        <p>Contact: {{this.dataValue.seller_name}}</p>
+                        <p>Number: {{this.dataValue.seller_number}}</p>
+                        <br>
+                        <button id="deleteButton" class="delete-listing waves-effect waves-light btn-small" data-id="{{this.dataValues.id}}">Confirm</button>
+                    </div>
+                    </div>
+                        <hr>
+                            {{!-- <a id="deleteButton" value={{this.dataValues.id}} class="waves-effect waves-light btn-small">BUY</a> --}}
+                           
+                 </div>
+                
+            {{/each}}
+                    
+            </div>
+ 
+        <div class="afterPurchase">
+    <h1 class="center-align">Thank you for using <a href="home" class="brand-logo" style="font-family: 'Permanent Marker', cursive;">Out <img
+                    src="assets/mountain.png" style="width: 40px; height: 35px;">' Bout</a>
+                    <a href="listing"><p>view our listings!</p></a></h1>
+  </div>
+
+        </div>
+    </div>

@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- My Style-->
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+
+<!-- Navbar-->
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper teal darken-4">
+            <a href="home.html" class="brand-logo" style="font-family: 'Permanent Marker', cursive;">Out <img
+                    src="assets/mountain.png" style="width: 40px; height: 35px;">' Bout</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Listing.html">Listing</a></li>
+                <li><a href="post.html">Post</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<br><br>
+
+<body>
+
+  <div class="row">
+    <div class="container">
+      <div class="proform">
+
+        <form>
+          <div class="titleform">
+            <header>
+              <div class="hdrimg">
+                <img class="responsive-img" src="assets/equipment.jfif" style="height: auto; width: 550px; border-radius: 10px;">
+              </div>
+            </header>
+            <hr>
+          </div>
+          <br><br>
+          Product Name:<br>
+          <input type="text" name="productname"><br>
+          Color:<br>
+          <input type="text" name="productcolor"><br>
+          Price:<br>
+          <input type="text" name="productprice">
+          <br><br>
+          Used/New<br>
+          <select id="country" name="country">
+              <option value="used">Used</option>
+              <option value="new">New</option>
+            </select>
+          <br><br>
+          <div class="form-group">
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+          <br><br>
+          <input type="submit" value="Submit" id= "submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="container">
+    <div class="row">
+      <!--   CARD 1   -->
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <img src="assets/rocket.png" alt="Unsplashed" style="height: 120px; width: 120px;">
+          <br><br>
+          <h5 class="center">SHIPPING AND DELIVERY</h5>
+
+          <p class="light">Here you can read some details about a nifty little lifecycle of your order's journey from
+            the time you place your order to your new treasures arriving at your doorstep.</p>
+          <hr>
+          <a class="waves-effect waves-light btn-small"
+            style="border-radius: 10px; width: 85px; background-color: lightgreen;">Read</a>
+        </div>
+      </div>
+
+      <!--   CARD 2   -->
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <img src="assets/info.png" alt="Unsplashed" style="height: 120px; width: 120px;">
+          <br><br>
+          <h5 class="center">PAYMENT METHODS</h5>
+
+          <p class="light">Here you can read some details about a nifty little lifecycle of your order's journey from
+            the time you place your order to your new treasures arriving at your doorstep.</p>
+          <hr>
+          <a class="waves-effect waves-light btn-small"
+            style="border-radius: 10px; width: 85px; background-color: lightgreen;">Read</a>
+        </div>
+      </div>
+
+      <!--   CARD 3   -->
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <img src="assets/email.png" alt="Unsplashed" style="height: 120px; width: 120px;">
+          <br><br>
+          <h5 class="center">CONTACT US</h5>
+
+          <p class="light">Here you can read some details about a nifty little lifecycle of your order's journey from
+            the time you place your order to your new treasures arriving at your doorstep.</p>
+          <hr>
+          <a class="waves-effect waves-light btn-small"
+            style="border-radius: 10px; width: 85px; background-color: lightgreen;">Read</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

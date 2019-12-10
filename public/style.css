@@ -1,0 +1,183 @@
+#header {
+    background-color: white;
+    height: 65px;
+    width: 960px;
+    margin: 21px;
+    border: 21px;
+    padding: 21px;
+}
+
+#namebox {
+    background-color: #4aaaa5;
+    position: relative;
+    font-size: large;
+    height: 45px;
+    width: 220.5px;
+    margin: 40.5px;
+    margin-left: initial;
+}
+
+#head {
+    color: white;
+    position: relative;
+    margin: 21px;
+    border: 21px;
+}
+
+#main {
+    background-color: white;
+    position: relative;
+    width: 960px;
+    height: 400px;
+    margin: 35px;
+    border: 21px;
+    padding: 21px;
+}
+
+#about {
+    color: #4aaaa5;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding: 25px;
+    font-size: xx-large;
+    padding-left: inherit;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.p {
+    color: black;
+}
+
+#mySidebar {
+    color: black;
+}
+
+
+/** image **/
+
+
+/* Container holding the image and the text */
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+/* Bottom left text */
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+
+/* Top left text */
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+
+/* Top right text */
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+
+/* Bottom right text */
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+
+/* Centered text */
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.proname {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: ;
+}
+
+.buttons {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#panel {
+    border-radius: 10px;
+}
+
+.loguito {
+    float: left;
+}
+
+.nav {
+    position: fixed;
+}
+
+.proform {
+    background-color: #e3f2fd;
+    padding: 20px;
+    width: 580px;
+    color: black;
+    float: center;
+    box-shadow: 10px 10px 5px gray;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hdrimg {
+    position: relative;
+}
+
+.nav-wrapper {
+    position: fixed;
+    color: #69f0ae !important;
+}
+
+.logo {
+    top: 0px;
+}
+
+.icon-block {
+    background-color: #e3f2fd;
+    padding: 10px;
+    box-shadow: 10px 10px 5px gray;
+    color: black;
+}
+
+.ourpro {
+    font-family: Permanent Marker, cursive;
+}
+
+.description {
+    border: black;
+}
