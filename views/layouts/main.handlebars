@@ -2,14 +2,50 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
-  {{!-- <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8"> --}}
-  <title>Home Page</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+
+  <html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- My Style-->
+  <link href="style.css" type="text/css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+  <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper teal darken-4">
+            <a href="home" class="brand-logo hoverable homeLink" style="font-family: 'Permanent Marker', cursive;">Out <img
+                    src="assets/mountain.png" style="width: 40px; height: 35px;">' Bout</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="home">Home</a></li>
+                <li><a href="listing">Listing</a></li>
+                <li><a href="post">Sell</a></li>
+                <li><a href="contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
   {{{body}}}
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="js/ajax.js"></script>
 </body>
 
 </html>
