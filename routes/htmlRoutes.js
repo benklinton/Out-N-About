@@ -43,6 +43,10 @@ module.exports = function(app) {
         res.render("404");
     });
 
+    app.get("/rentals", function(req, res) {
+        res.render("rentals");
+    });
+
     // Load example page and pass in an example by id
     app.get("/example/:id", function(req, res) {
         db.Products.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
