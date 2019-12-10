@@ -12,10 +12,6 @@ $('#buyButton').click(function(event) {
 })
 
 $('.deleteButton').click(function() {
-    // console.log("event: " + JSON.stringify($(this)));
-    // $.delete("/api/Products/:id",
-    // { id: $('value') }
-    // )
     $('.confirmPage').hide();
     $('.afterPurchase').show();
 })
@@ -40,10 +36,10 @@ $("#submit").click(function(event) {
     event.preventDefault();
 
     var product_name = $("#product_name").val().trim();
-    var product_catagory = $("#product_catagory").val().trim();
+    var product_category = $("#product_category").val().trim();
+    console.log(product_category)
     var product_description = $("#product_description").val().trim();
     var price = $("#price").val().trim();
-    // var quantity = $("#quantity").val().trim();
     var seller_name = $("#seller_name").val().trim();
     var seller_number = $("#seller_number").val().trim();
     console.log('seller_name: ', seller_name)
@@ -56,7 +52,7 @@ $("#submit").click(function(event) {
 
     $.post("/api/sell", {
             product_name,
-            product_catagory,
+            product_category,
             product_description,
             price: price,
             seller_name,

@@ -19,7 +19,7 @@
                         {{!-- <img class="responsive-img" src="assets/accesories.png" alt="Unsplashed"> --}}
                         <h2 class="center"> {{this.dataValues.product_name}}</h2>
                         <h3>Category</h3>
-                        <h2 class="center brown-text"><i class="material-icons">{{this.dataValues.product_category}}</i></h2>
+                        <h2 class="center brown-text"><i class="material-icons"></i>{{this.dataValues.product_category}}</i></h2>
                         <div class="description">
                             <h3 class="center">Product Description:</h3>
                             <h2 class="center light">{{this.dataValues.product_description}}</h2>
@@ -41,7 +41,7 @@
                     <div class="icon-block proform" style="max-width: 200px;">
                          <div >
                         <p>Contact: {{this.dataValue.seller_name}}</p>
-                        <p>Number: {{this.dataValye.seller_number}}</p>
+                        <p>Number: {{this.dataValue.seller_number}}</p>
                         <br>
                         <button id="deleteButton" class="delete-listing waves-effect waves-light btn-small" data-id="{{this.dataValues.id}}">Confirm</button>
                     </div>
